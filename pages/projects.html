@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Projects</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Projects</h1>
+            </div>
+        </section>
+
+        <section class="container projects-container">
+            <div class="projects-intro intro">
+                <p>Explore my collection of projects, each reflecting my passion for innovation and problem-solving
+                    through code and design.</p>
+            </div>
+            <div class="project-card">
+                <h3>Task Manager</h3>
+                <p>An efficient and user-friendly task management application designed to boost productivity and
+                    streamline workflow.</p>
+                <div class="project-details">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Intuitive drag-and-drop interface for easy task organization</li>
+                        <li>Customizable task categories and priority levels</li>
+                        <li>Collaborative features for team projects</li>
+                        <li>Real-time synchronization across devices</li>
+                        <li>Automated reminders and notifications</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>React.js, Node.js, Express.js, MongoDB, Docker, AWS</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A comprehensive weather application providing accurate and up-to-date weather information for
+                    locations worldwide.</p>
+                <div class="project-details">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Real-time weather data with hourly and 7-day forecasts</li>
+                        <li>Interactive maps with radar and satellite imagery</li>
+                        <li>Severe weather alerts and notifications</li>
+                        <li>Location-based automatic weather updates</li>
+                        <li>Customizable widgets for quick weather overview</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Vue.js, Vuex, OpenWeatherMap API, Progressive Web App (PWA), AWS</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Music Player</h3>
+                <p>A sleek and feature-rich music player application offering an immersive audio experience.</p>
+                <div class="project-details">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Elegant and intuitive user interface</li>
+                        <li>Support for various audio formats and playlists</li>
+                        <li>Advanced audio visualization</li>
+                        <li>Equalizer with preset and custom options</li>
+                        <li>Integration with popular music streaming services</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Flutter, Redux, Web Audio API, AWS</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Plant E-commerce Website</h3>
+                <p>An online marketplace for plant enthusiasts, offering a wide variety of plants and gardening
+                    supplies.</p>
+                <div class="project-details">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Extensive catalog with detailed plant care information</li>
+                        <li>User-friendly search and filter options</li>
+                        <li>Secure payment gateway integration</li>
+                        <li>Customer reviews and ratings system</li>
+                        <li>Plant care tips and blog section</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Next.js, Strapi CMS, Stripe for payments, PostgreSQL, AWS</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Chatbot</h3>
+                <p>An intelligent conversational agent capable of understanding and responding to user queries in
+                    natural language.</p>
+                <div class="project-details">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Natural Language Processing for understanding user intent</li>
+                        <li>Machine Learning algorithms for continuous improvement</li>
+                        <li>Multi-language support</li>
+                        <li>Integration with various messaging platforms</li>
+                        <li>Customizable responses and personality</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>Python, TensorFlow, NLTK, Flask API, AWS</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>E-learning Platform</h3>
+                <p>A comprehensive online learning platform designed to facilitate distance education and skill
+                    development.</p>
+                <div class="project-details">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Course creation and management tools for educators</li>
+                        <li>Interactive video lessons with quizzes and assignments</li>
+                        <li>Progress tracking and performance analytics</li>
+                        <li>Discussion forums and live chat for student-teacher interaction</li>
+                        <li>Certification system for completed courses</li>
+                    </ul>
+                    <h4>Technologies Used:</h4>
+                    <p>React.js, Django, PostgreSQL, WebRTC, AWS</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/skills.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Skills</h1>
+            </div>
+        </section>
+        <section class="skills-content container">
+            <div class="skills-intro intro">
+                <p>Here's an overview of my technical skills and the technologies I work with.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h2>Programming Languages</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">Dart</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Frontend Development</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">HTML5</div>
+                        <div class="skill-item">CSS3</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Vue.js</div>
+                        <div class="skill-item">Sass</div>
+                        <div class="skill-item">Bootstrap</div>
+                        <div class="skill-item">Tailwind CSS</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Backend Development</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express.js</div>
+                        <div class="skill-item">Django</div>
+                        <div class="skill-item">Spring Boot</div>
+                        <div class="skill-item">GraphQL</div>
+                        <div class="skill-item">RESTful APIs</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Databases</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">MySQL</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">MongoDB</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h2>DevOps & Cloud</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">AWS</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h2>Other Tools & Technologies</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">Agile/Scrum</div>
+                        <div class="skill-item">Jira</div>
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">Postman</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        window.addEventListener('load', () => {
+            const skillBars = document.querySelectorAll('.skill-progress-bar');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>
